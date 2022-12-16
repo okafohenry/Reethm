@@ -1,0 +1,96 @@
+<div class="container music-content-container">
+    <!-- Trending new Hits/ hero Section -->
+    <section class="trending-hits-container">
+        <h3>Trending New Hits</h3>
+        <div class="trending-hits">
+            <h1>In My Feelings</h1>
+            <div class="artists-stream-group">
+                <p class="artist">Camila Cabello</p>
+                <p>63Million Plays</p>
+            </div>
+            <div class="listen-btn-group">
+                <button class="listen-now">Listen Now</button>
+                <div class="favourite-container"><button class="favourite"><i class="bi bi-heart-fill"></i></button></div>
+            </div>
+        </div>
+    </section>
+    <section class="other-categories-container">
+        <div class="grid">
+            <div class="row gy-2">
+                <div class="col-md-8">
+                    <!-- Top Artists -->
+                    <div class="top-artists-col">
+                        <h3>Top Artists</h3>
+                        <!-- Artists stream information -->
+                        <div class="top-artists-container">
+                            <ul>
+                                <li *ngFor="let data of music_data[0].top_artistes, let idx">
+                                    <div class="top-artists">                                        
+                                        <div><img [src]="data.cover_photo" [alt]="data.artist_name" /></div>
+                                        <h4>{{ data.artist_name }}</h4>
+                                        <p>{{ data.total_stream_count }} Plays</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid mt-3">
+                        <div class="row gy-2 genre-charts-group">
+                            <!-- Genres -->
+                            <div class="col-md-4">
+                                <div class="genres-col">
+                                    <h3>Genres</h3>
+                                    <!-- All genres listing -->
+                                    <div class="genres-list">
+                                        <ul>
+                                            <li *ngFor="let genre of music_data[0].genres"> 
+                                                <a>                                                             
+                                                    <div *ngIf="genre.length <= 10" class="single-genre">
+                                                        {{ genre }}
+                                                    </div> 
+                                                </a>  
+                                                <a>                                                      
+                                                    <div *ngIf="genre.length > 10" class="single-genre">
+                                                        {{ genre }}
+                                                    </div>
+                                                </a> 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Top Charts -->
+                            <div class="col-md-8">
+                                <div class="top-charts-col">
+                                    <h3>Top Charts</h3>
+                                    <!-- all charting songs listing -->
+                                    <div class="songs-list">
+                                        <ol>
+                                            <li *ngFor="let track of music_data[0].top_charts">
+                                                <div class="top-chart-track">
+                                                    <div class="track-img-container"><img [src]="" [alt]="track.track_title" /></div>
+                                                    <div class="track-info">
+                                                        <h4>{{ track.track_title }}</h4>
+                                                        <p>{{ track.artiste_name }}</p>
+                                                    </div>
+                                                    <div class="play-fill"><i class="bi bi-play-fill"></i></div>
+                                                    <div class="plus"><i class="bi bi-plus"></i></div>
+                                                </div>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- music player -->
+                <div class="col-md-4">
+                    <div class="player-container">
+                        <h3>Player</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

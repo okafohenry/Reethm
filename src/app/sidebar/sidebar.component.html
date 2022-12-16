@@ -1,0 +1,19 @@
+<div class="side-bar">
+    <a class="logo">
+        <i class='bi bi-activity'></i>
+        <p>Reethm</p>
+    </a>
+    <div class="side-bar-data-container">
+        <div class="side-bar-data"  *ngFor="let items of menuItems">
+            <p class="label">{{ items.label }}</p>
+            <ul>
+                <li *ngFor="let item of items.navData">
+                    <a>
+                        <i [class]="item.icon"></i>
+                        <p>{{ item.label }}</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

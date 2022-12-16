@@ -1,4 +1,22 @@
-# Rythm
+# Reethm
+
+Reethm is a Music Streaming application which uses data from the Spotify API. This Application allows you listen to trending Music, view an artiste's stream \information was created using Angular, CSS, Bootstrap for the layout...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
 
