@@ -68,7 +68,7 @@ h3{
 
 
 .other-categories-container{
-    height: 30vh;
+    height: calc(100vh - 30vh);
     overflow-x: hidden;
 }
 .other-categories-container::-webkit-scrollbar{
@@ -188,10 +188,11 @@ h3{
     justify-content: center;
 }
 .top-chart-track .bi-play-fill{
-    padding: 5px;
+    padding: 3px 5px;
     color: #5773ff;
     border: 1px solid rgba(255, 255, 255, 0.664);
     border-radius: 3px;
+    cursor: pointer;
 }
 
 .top-chart-track .bi-plus{
@@ -199,6 +200,7 @@ h3{
     color: #000;
     font-weight: bold;
     font-size: 18px;
+    cursor: pointer;
 }
 
 

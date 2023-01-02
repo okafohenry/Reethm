@@ -1,17 +1,23 @@
-<div class="musica-container grid">
-  <div class="row">
-    <div class="col-lg-2 d-none d-lg-block">    
-      <aside>
-        <app-sidebar></app-sidebar>
-      </aside>
-    </div>
-    <div class="col-lg-10">
-      <header>
-        <app-top-bar></app-top-bar>
-      </header>
-      <main>
-        <app-music-content></app-music-content>
-      </main>
+<!-- <router-outlet> -->
+  <div class="musica-container grid">
+    <div class="row">
+      <div class="col-lg-2 d-none d-lg-block">    
+        <aside>
+          <app-sidebar></app-sidebar>
+        </aside>
+      </div>
+      <div class="col-lg-10">
+        <header>
+          <app-top-bar></app-top-bar>
+        </header>
+        <main>
+          <router-outlet></router-outlet>
+          <!-- <app-music-content></app-music-content> -->
+          <!-- <app-favourites></app-favourites>
+          <app-recent></app-recent>
+          <app-local></app-local> -->
+        </main>
+      </div>
     </div>
   </div>
-</div>
+<!-- </router-outlet> -->

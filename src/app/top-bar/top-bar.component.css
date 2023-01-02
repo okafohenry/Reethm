@@ -81,6 +81,9 @@ nav .topbar-group3>ul>li{
 nav .topbar-group3 li>a:hover{
     cursor: pointer;
 }
+.bi-gear-fill:hover, .bi-bell-fill:hover{
+    color: #4f68e6;
+}
 
 .profile>a{
     display: flex;
@@ -91,7 +94,6 @@ nav .topbar-group3 li>a:hover{
 .profile-picture{
     height: 20px;
     width: 20px;
-    /* margin: auto; */
     position: relative;
     top: 24.5px;
     border-radius: 3px;

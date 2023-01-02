@@ -55,10 +55,17 @@
     letter-spacing: .7px;
     line-height: 40px;
     cursor: pointer;
+    text-decoration: none;
+    color: #fff;
 }
 .side-bar-data ul>li>a:hover {
     border-right: 5px solid #4f68e6;
     color: #4f68e6;
+}
+.active{
+    border-right: 5px solid #4f68e6;
+    color: #4f68e6;
+
 }
 .side-bar-data a>i{
     font-size: 16px;

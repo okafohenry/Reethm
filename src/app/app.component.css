@@ -1,5 +1,5 @@
 .musica-container{
     background: linear-gradient(to bottom, #040404 10%, #18181d 100%);
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { topbarlinks } from 'src/routes';
+import { AppService } from '../_services/app.service';
 
 @Component({
   selector: 'app-top-bar',
@@ -8,4 +9,10 @@ import { topbarlinks } from 'src/routes';
 })
 export class TopBarComponent {
   topbarlinks = topbarlinks
+
+  constructor(private api: AppService){}
+
+  print(){
+    this.api.search();
+  }
 }
